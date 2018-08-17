@@ -13,7 +13,7 @@ public class SpringApplication {
 		//Retrieve
 		Coach myCoach = context.getBean("runCoach", Coach.class);
 		
-		//Call
+		//Call a method on the bean
 		System.out.println(myCoach.getWorkOut());
 		System.out.println(myCoach.getDailyFortune());
 		
