@@ -8,8 +8,11 @@ import org.springframework.stereotype.Component;
 public class RunCoach implements Coach {
 
 	@Autowired
-	@Qualifier("happyFortuneService")
+	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
+	
+	
+	
 	/*
 	 
 	//Constructor Injection
