@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class RunCoach implements Coach {
 
+	@Autowired
 	private FortuneService fortuneService;
 	/*
 	 
@@ -21,6 +22,7 @@ public class RunCoach implements Coach {
 		System.out.println("RunCoach: inside default constructor");
 	}
 	
+	/*
 	//define a setter method
 	@Autowired
 	public void setFortuneService(FortuneService theFortuneService) {
@@ -28,7 +30,7 @@ public class RunCoach implements Coach {
 
 		this.fortuneService = theFortuneService;
 	}
-	
+	*/
 	
 	@Override
 	public String getWorkOut() {
